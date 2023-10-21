@@ -318,6 +318,8 @@ void Parser::Setup(bool Compile)
     if (opts->noBuiltinIncludes)
         HSOpts.UseBuiltinIncludes = false;
 
+    c->getPreprocessor().SetSuppressIncludeNotFoundError(opts->suppressIncludeNotFound);
+
     if (opts->verbose)
         HSOpts.Verbose = true;
 

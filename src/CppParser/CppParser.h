@@ -45,6 +45,7 @@ struct CS_API CppParserOptions
 
     bool noStandardIncludes;
     bool noBuiltinIncludes;
+    bool suppressIncludeNotFound;
     bool microsoftMode;
     bool verbose;
     bool unityBuild;
